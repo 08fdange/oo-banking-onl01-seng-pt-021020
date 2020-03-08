@@ -21,7 +21,6 @@ class Transfer
       sender.balance -= @amount
       receiver.balance += @amount
       @status = "complete"
-    unless sender.balance.valid? == false
     end
   end
   
