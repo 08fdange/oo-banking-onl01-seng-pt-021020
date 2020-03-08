@@ -23,7 +23,6 @@ class Transfer
       @status = "complete"
     else
       "Transfer rejected. Please check your account balance."
-      @status = "rejected"
     end
   end
   
