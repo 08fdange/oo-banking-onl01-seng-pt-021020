@@ -10,12 +10,15 @@ class Transfer
     
   def valid?
     if self.sender.valid? && self.receiver.valid?
-      true 
+      true
     else 
       false 
     end 
   end
   
-  def execute_transaction   
+  def execute_transaction
+    if self.valid?
+      sender.
+      
   
 end
