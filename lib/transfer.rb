@@ -8,5 +8,13 @@ class Transfer
     @transfer_amount = transfer_amount
   end
     
+  def valid?
+    if self.sender.valid? && self.reciever.valid?
+      true 
+    else 
+      false 
+    end 
+  end
+      
   
 end
